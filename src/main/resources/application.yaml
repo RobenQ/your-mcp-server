@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: your-mcp-server
+  main:
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: caculator-mcp-server
+        version: 0.0.1
+        protocol: streamable
+        type: sync
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    root: info
+    org.springframework.ai: DEBUG
